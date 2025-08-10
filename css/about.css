@@ -1,0 +1,21 @@
+.about-card { background-color: #ffffff; padding: 2rem 1.25rem; margin: 1rem auto; max-width: 800px; }
+.about-header { text-align: left; margin-bottom: 2rem; }
+.about-header h2 { color: var(--primary-color); font-size: 2.2rem; margin-bottom: 1rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.about-header .subtitle { font-size: 1.2rem; color: var(--text-color); font-weight: 500; }
+.about-content { line-height: 1.8; color: var(--text-color); }
+.about-content h3 { color: var(--primary-color); margin-top: 2rem; margin-bottom: 1rem; font-size: 1.5rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.about-content ul { margin: 1rem 0; padding-left: 0; list-style: none; }
+.about-content li { margin-bottom: 0.8rem; padding: 0.8rem; background: #f8f9fa; border-radius: 0; font-weight: 400; color: var(--text-color); }
+.about-content p { margin-bottom: 1.2rem; font-size: 1.05rem; color: var(--text-color); }
+.about-content strong { color: var(--text-color); font-weight: 600; }
+.mission-vision { background: #f8f9fa; padding: 2rem; border-radius: 0; margin: 2rem 0; }
+.features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+.feature-item { background: white; padding: 1.5rem; border-radius: 0; border: 1px solid #e9ecef; transition: none; }
+.feature-item:hover { transform: none; box-shadow: none; }
+.feature-icon { color: var(--primary-color); font-size: 2rem; margin-bottom: 1rem; }
+
+@media (max-width: 768px) {
+    .about-card { padding: 1.35rem 0.9rem; margin: 0.45rem; }
+    .about-header h2 { font-size: 1.6rem; }
+    .features-grid { grid-template-columns: 1fr; gap: 0.9rem; }
+}

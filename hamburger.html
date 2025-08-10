@@ -1,0 +1,46 @@
+<div class="off-canvas-overlay" id="offCanvasOverlay"></div>
+<div class="off-canvas-menu" id="offCanvasMenu">
+    <div class="off-canvas-header">
+        <h3>Menu</h3>
+        <button type="button" class="off-canvas-close" id="offCanvasClose" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="off-canvas-content">
+        <nav class="off-canvas-nav">
+            <a href="#" class="off-canvas-nav-item" onclick="navigateTo('home'); closeOffCanvasMenu(); return false;">
+                <i class="fas fa-home"></i> <span>Home</span>
+            </a>
+            <a href="#" class="off-canvas-nav-item" onclick="navigateTo('products', 'all'); closeOffCanvasMenu(); return false;">
+                <i class="fas fa-store"></i> <span>All Products</span>
+            </a>
+            <a href="#" class="off-canvas-nav-item" onclick="navigateTo('products', 'course'); closeOffCanvasMenu(); return false;">
+                <i class="fas fa-graduation-cap"></i> <span>Courses</span>
+            </a>
+            <a href="#" class="off-canvas-nav-item" onclick="navigateTo('products', 'subscription'); closeOffCanvasMenu(); return false;">
+                <i class="fas fa-key"></i> <span>Subscriptions</span>
+            </a>
+            <a href="#" class="off-canvas-nav-item" onclick="navigateTo('products', 'software'); closeOffCanvasMenu(); return false;">
+                <i class="fas fa-laptop-code"></i> <span>Software</span>
+            </a>
+            <a href="#" class="off-canvas-nav-item" onclick="navigateTo('products', 'ebook'); closeOffCanvasMenu(); return false;">
+                <i class="fas fa-book-open"></i> <span>Ebooks</span>
+            </a>
+            <a href="#" class="off-canvas-nav-item" onclick="navigateTo('products', 'resource'); closeOffCanvasMenu(); return false;">
+                <i class="fas fa-tools"></i> <span>Resources</span>
+            </a>
+        </nav>
+    </div>
+</div>
+
+<div class="mobile-search-container">
+    <div class="mobile-search-wrapper">
+        <div class="search-bar mobile-box-search-bar">
+            <input type="text" id="mobileSearchInput" placeholder="Search items..." aria-label="Search products">
+            <div class="search-separator"></div>
+            <button type="button" class="mobile-search-button" id="mobileBoxSearchButton" aria-label="Search">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+    </div>
+</div>
