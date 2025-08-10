@@ -1,0 +1,26 @@
+.products-page { background-color: var(--background-color); border-radius: 0; box-shadow: none; border: none; margin: 0 auto; max-width: 1200px; position: relative; }
+.products-page .section-title { font-size: 2rem; color: var(--primary-color); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+#allProductsGrid {
+    display: grid;
+    /* Default for mobile (2 columns) is handled in the media query below */
+    /* This sets the desktop default to 3 columns */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.products-page-header { display: flex; justify-content: center; align-items: center; margin-bottom: 2rem; position: relative; }
+.products-page-title { margin: 0; color: var(--primary-color); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.page#productsPage.active { padding: 2rem 1.25rem; }
+@media (min-width: 769px) {
+    .products-page { margin: 2rem auto; max-width: 1200px; }
+}
+
+@media (max-width: 768px) {
+    .page#productsPage.active { padding: 0.9rem 0.9rem; }
+    .products-page { margin: 0; max-width: none; }
+    #allProductsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

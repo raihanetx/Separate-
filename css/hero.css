@@ -1,0 +1,16 @@
+.banner { padding: 0.5rem 1.25rem; margin-top: 1.25rem; overflow: hidden; position: relative; }
+@media (min-width: 769px) { .banner { margin-top: 1.25rem; padding: 0.5rem 1.25rem; } }
+.banner-image-container { aspect-ratio: 1200 / 350; width: 100%; position: relative; overflow: hidden; border-radius: 10px; background-color: #e9e9e9; }
+.banner-image-container picture, .banner-image-container img { width: 100%; height: 100%; display: block; object-fit: cover; }
+@media (max-width: 768px) { .banner { margin-top: 0.9rem; padding: 0.45rem 0.9rem; } .banner-image-container { aspect-ratio: 16 / 9; } }
+.banner-image-container .image-placeholder-text { font-size: 1.4em; font-weight: 600; color: #a0a0a0; }
+
+.image-fade-in { opacity: 0; transition: opacity 0.5s ease-in-out; }
+.image-fade-in.loaded { opacity: 1; }
+.image-placeholder, .banner-image-container { width: 100%; background-color: #e9e9e9; display: flex; align-items: center; justify-content: center; text-align: center; overflow: hidden; color: #bbb; position: relative; border-radius: 10px; }
+.banner-image-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.image-placeholder-text { font-weight: 500; line-height: 1.4; font-size: 0.9em; color: #999; }
+@media (max-width: 480px) {
+    .banner-image-container .image-placeholder-text { font-size: 0.9em; }
+    .banner { margin-top: 0.65rem; padding: 0.45rem 0.65rem; }
+}
